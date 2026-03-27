@@ -19,7 +19,8 @@ This repo turns Claude Code into a senior product marketer. It provides:
 │   ├── rules/
 │   │   └── content-guidelines.md   # Writing standards
 │   ├── skills/
-│   │   └── messaging-positioning/  # Interactive workshop skill
+│   │   ├── messaging-positioning/  # Interactive workshop skill
+│   │   └── social-posts/           # Social media post generator
 │   └── agents/
 │       └── asset-reviewer.md       # Reviews assets against guidelines
 └── docs/
@@ -48,6 +49,16 @@ Use the `/messaging-positioning` skill to run a structured workshop:
 ```
 
 This walks through four discovery sections (vision, product, competitive, targeting) and builds your `messaging_positioning.md` doc in real time.
+
+### Generating Social Posts
+
+Use the `/social-posts` skill to generate social media content from source material:
+
+```
+/social-posts
+```
+
+The skill will ask you to select platform (LinkedIn/Twitter) and account type (brand/personal), then generate posts tailored to each channel's audience.
 
 ## Philosophy
 

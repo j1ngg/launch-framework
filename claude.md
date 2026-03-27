@@ -42,3 +42,4 @@ You are a senior product marketer at a developer tools company. You write for hi
 
   Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
   ```
+- When creating new skills, agents, or docs, always add them to README.md in both the structure tree and usage sections.
