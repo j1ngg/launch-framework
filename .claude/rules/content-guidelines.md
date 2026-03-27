@@ -56,3 +56,54 @@ These guidelines are not recommendations. They are expectations.
 - Show industry context: frameworks, roles, pressures.
 - Visuals that clarify: charts, frameworks, maturity models. No fluff.
 - Credibility: quotes, stats, analyst insight.
+
+## Section Headers and Structure
+
+**Headers should describe the narrative journey, not just the topic.** Add subtitles or context that show where the section fits in the overall arc. Use structures like "From X to Y" when showing progression.
+
+**Tie headers to the concrete subject.** Instead of generic headers ("What the Numbers Look Like"), name the product or actor ("VLAD's Impact: What the Numbers Show").
+
+**Name the enabler or cause in headers when relevant.** If something enabled a result, put it in the header ("Development Velocity Enabled by Claude Code" not "Development Velocity").
+
+**Anchor abstract concepts to the concrete running example.** Do not leave concepts floating. If the piece has a central example, reference it in headers and transitions ("Securing VLAD: Ungoverned Agents Are a Security Problem" not "Ungoverned Agents Are a Security Problem").
+
+**Convert capability lists embedded in prose into actual lists.** If a paragraph contains 3 or more distinct items, break them into numbered or bulleted lists.
+
+**Request screenshots or visuals when introducing a product or tool.** The claim "it works" needs visual proof. Flag for assets if none exist.
+
+## Authenticity and Voice
+
+**Surface personal perspective when it exists.** If the author has direct experience, a specific role, or firsthand involvement, bring that voice into transitions and framing. Do not manufacture personal perspective where none exists.
+
+**Disclose affiliations when the author has one.** If the author helped build, works on, or has a relationship with the product being discussed, add an explicit "Full disclosure" statement. This establishes credibility with technical audiences. Omit if there is no affiliation to disclose.
+
+**Use dogfooding framing when applicable.** If you use your own product internally, say so. "Eating our own dogfood" resonates with technical audiences and demonstrates confidence in the product.
+
+## Banned Words
+
+These words are now synonymous with AI generated writing. Never use them:
+
+- delve, landscape
+- robust, pivotal, integral, nuanced
+- foster, glean, underscore, propel
+- unparalleled, vast, plethora
+- transformative, game-changer, revolutionary, cutting-edge
+- seamless, leverage (as verb)
+
+Also ban these phrases:
+
+- "cannot be overstated"
+- "it's worth noting"
+- "in today's [X]"
+
+## Structural Anti-Patterns
+
+Do not use these formulaic structures:
+
+- "It wasn't just X, it was Y"
+- "This isn't just about X, it's about Y"
+- Rhetorical questions at the end of a section or post
+- Dramatic openings ("Passwords are dead", "Everything is broken")
+- Fear-mongering language ("catastrophic", "wide open", "you don't even see coming")
+- Transition word chains (moreover, furthermore, additionally, conversely)
+- Unnecessary explainer sentences that restate the obvious
