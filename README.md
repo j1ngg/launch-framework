@@ -43,6 +43,7 @@ This repo turns Claude Code into a senior product marketer for technical audienc
 │   │   ├── skill-builder/           # Meta-skill for creating new skills/agents
 │   │   ├── email/                   # Event follow-up email sequences
 │   │   ├── ads/                     # Paid ad copy generator
+│   │   ├── sales-deck/              # B2B sales narrative deck builder
 │   │   └── autoresearch/            # Skill optimization via autonomous evals
 │   └── agents/
 │       ├── asset-reviewer.md        # Reviews assets against guidelines
@@ -62,6 +63,7 @@ This repo turns Claude Code into a senior product marketer for technical audienc
     ├── blog/
     ├── email/
     ├── ads/
+    ├── decks/
     └── research/
 ```
 
@@ -145,6 +147,50 @@ Supported platforms:
 - Google Ads (Search, Display)
 - Meta (Facebook, Instagram)
 - LinkedIn
+
+### Creating Sales Decks
+
+Use the `/sales-deck` skill to create B2B sales narrative decks:
+
+```
+/sales-deck
+```
+
+The skill uses April Dunford's 8-step sales pitch methodology, structured in two phases:
+
+| Phase | Slides | Purpose |
+|-------|--------|---------|
+| **The Setup** | 1 to 10 | Establish market context and purchase criteria. Product is NOT mentioned. |
+| **The Follow-Through** | 11 to 17 | Introduce product mapped directly to the criteria from the Setup. |
+
+This structure combats "no decision" paralysis by giving buyers a clear evaluation framework before asking them to consider your solution.
+
+**Slide structure:**
+
+| Slide | Name | Content |
+|-------|------|---------|
+| 1 | Title/Thesis | Bold provocative insight (no product name) |
+| 2 | TLDR | Executive summary of the argument arc |
+| 3 to 4 | Status Quo | Why the current approach was rational |
+| 5 to 6 | Disruption | What changed to break the status quo |
+| 7 to 8 | Alternatives | Why other options fall short |
+| 9 to 10 | Perfect World | The new purchase criteria |
+| 11 | Introduction | Product positioning and context |
+| 12 to 14 | Differentiated Value | Capabilities mapped to Perfect World criteria |
+| 15 | Proof | Customer results from approved testimonials |
+| 16 | Objections | (Optional) Address common concerns |
+| 17 | The Ask | Recap and clear call to action |
+
+**Key features:**
+- Reads all `docs/inputs/` files automatically for product context
+- Enforces "no product in Setup" rule
+- Maps proof points to differentiated value claims
+- Outputs Markdown outline plus PPTX generation via Python script
+- Includes self-review checklist for Dunford framework compliance
+
+**Output:**
+- Markdown outline: `output/decks/[product-name]-sales-deck.md`
+- PPTX file: `output/decks/[product-name]-sales-deck.pptx`
 
 ### Building New Skills or Agents
 
