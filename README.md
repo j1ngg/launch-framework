@@ -44,6 +44,7 @@ This repo turns Claude Code into a senior product marketer for technical audienc
 │   │   ├── email/                   # Event follow-up email sequences
 │   │   ├── ads/                     # Paid ad copy generator
 │   │   ├── sales-deck/              # B2B sales narrative deck builder
+│   │   ├── blog/                    # SEO/AEO optimized blog post generator
 │   │   └── autoresearch/            # Skill optimization via autonomous evals
 │   └── agents/
 │       ├── asset-reviewer.md        # Reviews assets against guidelines
@@ -191,6 +192,45 @@ This structure combats "no decision" paralysis by giving buyers a clear evaluati
 **Output:**
 - Markdown outline: `output/decks/[product-name]-sales-deck.md`
 - PPTX file: `output/decks/[product-name]-sales-deck.pptx`
+
+### Writing Blog Posts
+
+Use the `/blog` skill to generate SEO and AEO optimized blog posts:
+
+```
+/blog
+```
+
+The skill supports five blog types, each with its own structure and word count:
+
+| Type | Best For | Length |
+|------|----------|--------|
+| Feature announcement | Release notes, new capability | 800 to 1,200 words |
+| Product launch | New product, major release | 1,200 to 1,800 words |
+| Thought leadership | Opinion piece, contrarian take | 1,500 to 2,500 words |
+| Cookbook/tutorial | How-to guide, integration walkthrough | 1,500 to 3,000 words |
+| Report conversion | Whitepaper or case study → blog | 1,000 to 1,500 words |
+
+**Source content formats supported:**
+- Markdown files
+- PDFs (reports, case studies)
+- URLs (fetches and processes)
+- Raw pasted text
+
+**Every blog includes:**
+- TLDR section (top of post, LLM-extractable)
+- Metadescription (under 160 chars)
+- FAQ section (3 to 5 questions, AEO optimized)
+- Schema markup suggestions (Article, HowTo, FAQPage)
+- Internal linking recommendations (fetches from your domain)
+- Visual callout flags (`[VISUAL: description]`)
+
+**Key features:**
+- WebSearch for supporting evidence and current statistics
+- Fetches pages from your domain for contextual internal links
+- Code snippets always include comments
+- Follows 2026 SEO/AEO best practices (archetypal phrasing, answer-first structure)
+- Hands off to `/social-posts` skill for promotion
 
 ### Building New Skills or Agents
 
