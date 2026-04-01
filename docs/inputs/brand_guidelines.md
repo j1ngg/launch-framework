@@ -1,6 +1,6 @@
 # Brand Visual Guidelines
 
-Use this document to define your brand's visual style for AI-generated images. The `/blog-image` skill reads this file to create consistent, on-brand featured images.
+Use this document to define your brand's visual style.
 
 ## Visual Style
 
