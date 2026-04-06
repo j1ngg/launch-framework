@@ -24,6 +24,104 @@ These are high trust, high scrutiny environments where developers discover and e
 
 ---
 
+## GitHub Lists and Curated Repositories
+
+GitHub "awesome lists" are high traffic, community curated directories that serve as passive discovery channels. Developers browse them when evaluating tool categories. Getting listed is free but requires a PR that meets each repo's contribution guidelines. Star counts approximate reach.
+
+### Dev Tools Lists: Mega Reach (100k+ stars)
+
+| Repo | Stars | Category |
+|------|-------|----------|
+| `public-apis/public-apis` | ~420k | API directory. If your tool exposes a public API, this is mandatory. |
+| `awesome-selfhosted/awesome-selfhosted` | ~284k | Self hosted software. Requires a self hosted or FOSS option. |
+| `trimstray/the-book-of-secret-knowledge` | ~214k | DevOps, SysAdmin, Security compendium. CLI tools and infrastructure resources. |
+| `Hack-with-Github/Awesome-Hacking` | ~110k | Meta list linking to security focused awesome lists. |
+| `Shubhamsaboo/awesome-llm-apps` | ~105k | AI/LLM apps. Fast growing. |
+
+### Dev Tools Lists: Major Reach (30k to 100k stars)
+
+| Repo | Stars | Category |
+|------|-------|----------|
+| `punkpeye/awesome-mcp-servers` | ~84k | Model Context Protocol servers and tools. Explosive growth. |
+| `josephmisiti/awesome-machine-learning` | ~72k | ML frameworks and tools. Long established. |
+| `binhnguyennus/awesome-scalability` | ~70k | System design, scalability patterns, monitoring, databases. |
+| `docker/awesome-compose` | ~45k | Official Docker org list. Relevant for any tool with Docker deployment. |
+| `veggiemonk/awesome-docker` | ~36k | Docker ecosystem tools and resources. |
+| `awesome-foss/awesome-sysadmin` | ~33k | Monitoring, config management, CI/CD. Direct B2B dev tools overlap. |
+
+### Dev Tools Lists: High Value Niche (10k to 30k stars)
+
+| Repo | Stars | Category |
+|------|-------|----------|
+| `e2b-dev/awesome-ai-agents` | ~27k | AI agents, frameworks, orchestration. |
+| `Hannibal046/Awesome-LLM` | ~27k | LLM research and tools. Academic leaning. |
+| `lukasmasuch/best-of-ml-python` | ~23k | Ranked ML Python tools with quality scores. |
+| `EthicalML/awesome-production-machine-learning` | ~20k | MLOps, feature stores, model serving, monitoring. |
+| `RunaCapital/awesome-oss-alternatives` | ~19k | OSS alternatives to SaaS. High priority if you replace a known product. |
+| `ramitsurana/awesome-kubernetes` | ~16k | K8s tools, operators, service meshes. |
+| `sbilly/awesome-security` | ~14k | Network security, threat detection, forensics. |
+| `qazbnm456/awesome-web-security` | ~13k | Web application security tools and techniques. |
+| `pingcap/awesome-database-learning` | ~11k | Database tools and internals. Maintained by PingCAP. |
+
+### Dev Tools Lists: Targeted Niche (2k to 10k stars)
+
+| Repo | Stars | Category |
+|------|-------|----------|
+| `atinfo/awesome-test-automation` | ~7k | Test frameworks, load testing, API testing by language. |
+| `pditommaso/awesome-pipeline` | ~7k | CI/CD pipeline tools and frameworks. |
+| `devsecops/awesome-devsecops` | ~5k | SAST, DAST, dependency scanning, secrets management. |
+| `awesome-opencode/awesome-opencode` | ~5k | AI coding tools and code assistants. |
+| `wmariuss/awesome-devops` | ~4k | Broad DevOps: cloud, monitoring, logging, orchestration. |
+| `workos/awesome-developer-experience` | ~2.3k | DX research and tools. Small but high signal audience. |
+
+### Marketing Related Repos: Adjacent/Ecosystem
+
+| Repo | Stars | Category |
+|------|-------|----------|
+| `oxnr/awesome-analytics` | ~4.3k | Analytics frameworks and tools. |
+| `nordicgiant2/awesome-landing-page` | ~3.8k | Landing page templates. |
+| `bmpi-dev/awesome-seo` | ~2.6k | Google SEO, web traffic monetization. |
+| `BolajiAyodeji/awesome-technical-writing` | ~2.2k | Technical writing resources and tools. |
+| `serpapi/awesome-seo-tools` | ~922 | Curated SEO tools. |
+| `teles/awesome-seo` | ~798 | SEO links and resources. |
+| `devrelcollective/awesome-devrel` | ~754 | Developer Relations resources. |
+| `merklefruit/SaaS4Devs` | ~744 | Resources for devs bootstrapping SaaS. |
+
+### Marketing Related Repos: Core Marketing Lists
+
+| Repo | Stars | Category |
+|------|-------|----------|
+| `bekatom/awesome-growth-hacking` | ~508 | Growth hacking resources and tools. |
+| `ronakganatra/awesome-marketing` | ~388 | General marketing, hand picked. |
+| `marketingtoolslist/awesome-marketing` | ~272 | Marketing tools and resources. |
+| `ninjasort/awesome-marketing` | ~232 | Internet marketing resources. |
+| `station-10/awesome-marketing-machine-learning` | ~131 | ML for marketing: media mix models, attribution. |
+
+### Marketing Related Repos: Niche/Specialized
+
+| Repo | Stars | Category |
+|------|-------|----------|
+| `marketinguys/awesome-content-marketing` | ~51 | Content marketing tools and strategies. |
+| `johnmurch/awesome-seo-scripts` | ~51 | SEO scripts and automation. |
+| `shakostats/Awesome-Marketing-Science` | ~44 | Geo incrementality, MMM, MTA. |
+| `marketingtoolslist/awesome-marketing-newsletters` | ~36 | Top marketing newsletters. |
+
+### GitHub Lists: Submission Strategy
+
+**Highest ROI targets** for a B2B dev tools company:
+
+1. **`public-apis/public-apis`** (420k stars) if your tool exposes an API
+2. **`awesome-selfhosted/awesome-selfhosted`** (284k stars) if you offer a self hosted option
+3. **`punkpeye/awesome-mcp-servers`** (84k stars) if you ship an MCP integration
+4. **`RunaCapital/awesome-oss-alternatives`** (19k stars) if you replace a known SaaS product
+5. **The category specific list** matching your product vertical
+
+**Contribution mechanics:** Most lists accept PRs. Read each repo's `CONTRIBUTING.md` before submitting. Many have strict formatting, alphabetical ordering, and require a description matching the project README. Some (like `awesome-selfhosted`) require FOSS licensing. Rejection rates are high for lists over 50k stars.
+
+**Notable gaps in marketing repos:** No high star lists exist for email marketing, social media tools, product led growth, or community building specifically. SEO dominates with three lists at 800+ stars. Marketing AI/ML is underserved.
+
+---
+
 ## Integration Directories and Registries
 
 These are directories where your product can be listed as an integration, package, or tool. They provide passive, ongoing discovery by developers who are actively searching for solutions.
