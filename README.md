@@ -45,6 +45,7 @@ This repo turns Claude Code into a senior product marketer for technical audienc
 │   │   ├── ads/                     # Paid ad copy generator
 │   │   ├── sales-deck/              # B2B sales narrative deck builder
 │   │   ├── blog/                    # SEO/AEO optimized blog post generator
+│   │   ├── image/                   # Marketing image generator (MCP)
 │   │   └── autoresearch/            # Skill optimization via autonomous evals
 │   └── agents/
 │       ├── asset-reviewer.md        # Reviews assets against guidelines
@@ -66,6 +67,7 @@ This repo turns Claude Code into a senior product marketer for technical audienc
     ├── email/
     ├── ads/
     ├── decks/
+    ├── images/
     └── research/
 ```
 
@@ -248,6 +250,34 @@ LinkedIn Pulse articles are the second most-cited domain in AI-generated respons
 - Code snippets always include comments
 - Follows 2026 SEO/AEO best practices (archetypal phrasing, answer-first structure)
 - Hands off to `/social-posts` skill for short-form promotion
+
+### Generating Marketing Images
+
+Use the `/image` skill to generate images for any marketing asset:
+
+```
+/image
+```
+
+The skill uses the `mcp-image` MCP server to generate visuals for social posts, blog headers, ads, and presentations. It reads `docs/inputs/brand_guidelines.md` for style consistency and constructs optimized prompts based on your content.
+
+| Use Case | Aspect Ratio | Resolution |
+|----------|-------------|------------|
+| LinkedIn / Twitter post | 16:9 | 2K |
+| Blog featured image | 16:9 | 2K |
+| LinkedIn ad | 1:1 | 2K |
+| Meta ad | 4:5 | 2K |
+| Presentation slide | 16:9 | 2K |
+
+Key features:
+- Reads brand guidelines automatically for visual consistency
+- Supports reference images for style matching
+- Prompt construction in three layers: style, concept, restrictions
+- Iterative refinement loop (up to 5 rounds)
+- Generates alt text for SEO
+- Works alongside other skills (`/social-posts`, `/blog`, `/ads`) to create visuals for generated content
+
+Output: `output/images/`
 
 ### Building New Skills or Agents
 
