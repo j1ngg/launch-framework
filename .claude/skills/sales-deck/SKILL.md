@@ -18,6 +18,8 @@ The framework has two distinct phases:
 
 This structure combats "no decision" paralysis by giving buyers a clear framework before asking them to evaluate your solution.
 
+> **SCQA alignment:** This framework naturally follows the McKinsey SCQA pattern. Status Quo = Situation, Disruption = Complication, Perfect World = Question, Product Introduction = Answer. The narrative logic should feel inevitable by the time you reveal your product.
+
 ---
 
 ## Step 1: Gather Inputs
@@ -216,6 +218,8 @@ Apply these to every slide:
 
 | Principle | Implementation |
 |-----------|----------------|
+| **Action titles** | Every slide title is a thesis, not a label. "A $40B market with no dominant player below enterprise" not "Market Opportunity." A reader who sees only the titles can reconstruct the full argument. Keep titles to two lines maximum. |
+| **One slide, one message** | Each slide carries exactly one insight. If a slide has two conclusions, split it into two slides. Every element on the slide exists to serve the title. |
 | **Minimalist text** | No paragraphs. Maximum 6 bullets per slide, 10 words per bullet. |
 | **Punchline statements** | Anchor the bottom of most slides with a bold summary that drives the narrative forward. |
 | **Typographic emphasis** | Bold key phrases within statements to make them scannable. |
@@ -241,14 +245,14 @@ Generate the deck as a Markdown outline with this structure:
 
 ## Part 1: The Setup
 
-### Slide 1: Title
+### Slide 1: [Action title: the provocative thesis as a statement of fact]
 **[Bold thesis statement]**
 
 Speaker notes: [What to say when presenting this slide]
 
 ---
 
-### Slide 2: TLDR
+### Slide 2: [Action title: TLDR framed as the argument's conclusion]
 - [Bullet 1]
 - [Bullet 2]
 - [Bullet 3]
@@ -264,7 +268,7 @@ Speaker notes: [What to say]
 
 ## Part 2: The Follow-Through
 
-### Slide 11: [Product Name]
+### Slide 11: [Action title: product positioning as a thesis statement]
 [Content]
 
 Speaker notes: [What to say]
@@ -294,8 +298,12 @@ After generating the deck, verify it passes these checks:
 - [ ] Perfect World (Slides 9 to 10) establishes clear criteria before product intro
 - [ ] Differentiated Value (Slides 12 to 14) maps directly to Perfect World criteria
 - [ ] Proof (Slide 15) uses only approved customers from testimonials.md
+- [ ] MECE: no two slides make the same point, no logical step is skipped
 
 ### Design and Text
+- [ ] Every slide title is an action title (thesis, not label). Readable as a standalone argument from titles alone
+- [ ] No slide title exceeds two lines
+- [ ] Each slide carries exactly one message. If two conclusions exist, split the slide
 - [ ] No slide has more than 6 bullets
 - [ ] No bullet exceeds 10 words
 - [ ] Punchline statements present on key slides (2, 6, 10, 17)

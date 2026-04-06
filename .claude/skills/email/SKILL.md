@@ -267,36 +267,40 @@ The goal is to feel personal because it references real shared context, not beca
 
 ## Output Format
 
-For each email, output:
+**Always write the final sequence to a plain text file in `output/email/`.** This is the primary deliverable. The file must be copy/paste ready for Google Docs with no Markdown formatting artifacts. Only promote to `docs/outputs/` if the user explicitly requests it.
+
+**File naming:** `email-sequence-[event-or-context]-[product].txt` (e.g., `email-sequence-rsac-ceros.txt`)
+
+**File format rules:**
+- Plain `.txt` file, no Markdown syntax (no `##`, `**`, `---`, or `[]()` links)
+- Use ALL CAPS for section headers (e.g., `EMAIL 1: THE RECALL`)
+- Use plain text labels for metadata (e.g., `Send timing:`, `Thread:`, `Subject:`)
+- Separate emails with two blank lines
+- Bullets use `- ` prefix
+- Links written as bare URLs on their own line or inline in plain text
+
+For each email in the file, use this structure:
 
 ```
-## Email [N]: [Name]
-
-**Send timing:** [When to send]
-**Thread:** [New thread / Reply to Email X]
-**Subject:** [Subject line or "N/A - threaded reply"]
-
----
+EMAIL [N]: [NAME]
+Send timing: [When to send]
+Thread: [New thread / Reply to Email X]
+Subject: [Subject line or "N/A (threaded reply)"]
 
 [Full email body]
-
----
-
-**Word count:** [X]
 ```
 
-After all 4 emails, include:
+After all 4 emails, include a plain text summary:
 
 ```
-## Sequence Summary
-
-| Email | Timing | Thread | CTA |
-|-------|--------|--------|-----|
-| 1 | Day 0 | New | [CTA type] |
-| 2 | +2 days | Reply | [CTA type] |
-| 3 | +6 days | New | [CTA type] |
-| 4 | +11 days | Reply | [CTA type] |
+SEQUENCE SUMMARY
+Email 1 | Day 0    | New thread | [CTA type]
+Email 2 | +2 days  | Reply      | [CTA type]
+Email 3 | +6 days  | New thread | [CTA type]
+Email 4 | +11 days | Reply      | [CTA type]
 ```
+
+**In addition to the file**, display the sequence in the conversation using Markdown for readability. But the file in `output/email/` is the canonical output.
 
 ---
 
