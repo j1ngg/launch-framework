@@ -46,7 +46,9 @@ This repo turns Claude Code into a senior product marketer for technical audienc
 │   │   ├── sales-deck/              # B2B sales narrative deck builder
 │   │   ├── blog/                    # SEO/AEO optimized blog post generator
 │   │   ├── image/                   # Marketing image generator (MCP)
-│   │   └── autoresearch/            # Skill optimization via autonomous evals
+│   │   ├── autoresearch/            # Skill optimization via autonomous evals
+│   │   ├── producthunt-listing/     # PH listing asset generator
+│   │   └── producthunt-launch-plan/ # PH launch planner with dated checklist
 │   └── agents/
 │       ├── asset-reviewer.md        # Reviews assets against guidelines
 │       ├── ads-auditor.md           # Audits ad performance with health scoring
@@ -60,7 +62,8 @@ This repo turns Claude Code into a senior product marketer for technical audienc
 │   │   ├── testimonials.md
 │   │   └── brand_guidelines.md
 │   └── reference/                   # Reusable frameworks
-│       └── channel_directory.md
+│       ├── channel_directory.md
+│       └── producthunt_playbook.md  # PH launch best practices
 └── output/                          # Generated assets by type
     ├── social/
     ├── blog/
@@ -364,6 +367,30 @@ Supported platforms: Google Ads, Meta (Facebook/Instagram), LinkedIn
 - CTR below 50% of benchmark
 - Frequency > 2.5 (Meta audience fatigue)
 - Learning phase resets
+
+### Planning a Product Hunt Launch
+
+Use the `/producthunt-launch-plan` skill to generate a dated launch plan:
+
+```
+/producthunt-launch-plan
+```
+
+This walks through launch parameters (team, assets, timeline) and produces a complete checklist with workstreams, outreach cadence, team roles, and a launch day runsheet. All dates are calculated backwards from your target launch date.
+
+### Generating Product Hunt Listing Assets
+
+Use the `/producthunt-listing` skill to generate PH listing copy and visual specs:
+
+```
+/producthunt-listing
+```
+
+Generates tagline options (with stranger test), description, maker's first comment, visual asset spec (gallery shot list + video storyboard), and social proof hooks. Pair with the asset reviewer agent for quality control.
+
+### Product Hunt Playbook
+
+The `docs/reference/producthunt_playbook.md` file contains the full reference guide: algorithm mechanics, timing strategy, outreach templates, promotional tactics, post-launch execution, and multi-launch strategy. Both PH skills reference this playbook automatically.
 
 ## Philosophy
 
