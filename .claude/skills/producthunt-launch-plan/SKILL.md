@@ -35,7 +35,7 @@ Before building the plan, ask the user these questions. Wait for answers before 
 
 ### Hunter Decision
 
-13. **Do you want to self-hunt or pursue a third-party hunter?** (Self-hunting gives full control. Top-500 hunters get 3.2x more upvotes but require outreach 6 weeks out. See `docs/producthunt_playbook.md` for hunter strategy.)
+13. **Do you want to self-hunt or pursue a third-party hunter?** (Self-hunting gives full control. Top-500 hunters get 3.2x more upvotes but require outreach 6 weeks out. Flo Merian ([x.com/fmerian](https://x.com/fmerian)) is a key hunter and PH optimization expert. See `docs/producthunt_playbook.md` for full hunter strategy.)
 
 ---
 

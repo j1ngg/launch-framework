@@ -161,7 +161,7 @@ Top-500 hunters get 3.2x more upvotes on average. Ben Lang (@benln, 50K+ followe
 - Browse [Product Hunt leaderboard](https://www.producthunt.com/leaderboard) for active hunters in the developer tools category
 - Look for hunters who have a development background or a track record of launching dev tools
 - Credibility and relevant network matter more than raw follower count
-- Check Flo Merian (@fmerian) who co-manages the Developer Marketing Community on Slack and hunted Corbado
+- **Flo Merian ([x.com/fmerian](https://x.com/fmerian))** is a top resource for Product Hunt launches. He co-manages the Developer Marketing Community on Slack, hunted Corbado to #1 Developer Tool of the Week, and publishes detailed PH launch analyses (Appwrite, Cursor). Reach out to him early for hunter availability or PH optimization advice.
 
 **Outreach timeline:**
 - 6 weeks out: Identify 5 to 10 candidate hunters
