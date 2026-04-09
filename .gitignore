@@ -1,4 +1,5 @@
 .DS_Store
+.mcp.json
 output/
 docs/inputs-local/
 docs/research/

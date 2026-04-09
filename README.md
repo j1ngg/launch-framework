@@ -33,7 +33,7 @@ This repo turns Claude Code into a senior product marketer for technical audienc
 ## Structure
 
 ```
-├── claude.md                        # Core identity and workflow instructions
+├── CLAUDE.md                        # Core identity and workflow instructions
 ├── .claude/
 │   ├── rules/
 │   │   └── content-guidelines.md    # Writing standards
